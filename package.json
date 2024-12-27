@@ -1,0 +1,23 @@
+{
+  "name": "webcrawlerjs",
+  "version": "1.0.0",
+  "description": "project to learn HTTP by building a web crawler",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheAyushB/WebCrawlerJS.git"
+  },
+  "author": "TheAyushB",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheAyushB/WebCrawlerJS/issues"
+  },
+  "homepage": "https://github.com/TheAyushB/WebCrawlerJS#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
