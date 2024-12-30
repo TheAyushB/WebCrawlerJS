@@ -80,3 +80,20 @@ test('getURLsFromHTML both', () => {
     const expected = ["https://blog.ayush.dev/path1/", "https://blog.ayush.dev/path2/"];
     expect(actual).toEqual(expected);
 })
+
+test('getURLsFromHTML invalid', () => {
+    const inputHTMLBody = `
+    <html>
+        <body>
+            <a href="invalid">
+                Invalid Link
+            </a>
+        </body>
+    </html>
+    `
+    const inputBaseURL = "https://blog.ayush.dev"
+    const actual = getURLsFromHTML(inputHTMLBody, inputBaseURL);
+    const expected = [];
+    expect(actual).toEqual(expected);
+})
+
